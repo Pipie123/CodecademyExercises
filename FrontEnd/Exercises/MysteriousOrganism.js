@@ -17,7 +17,14 @@ const mockUpStrand = () => {
 };
 
 //Start here
+//initial list
 let samples = [];
+/*
+* Creates objects
+* mutate() basically recreates strand's dna while making sure it doesn't repeat
+* compareDna() basically just compares two strands of dna and say in percent how much they match
+* willLikelySurvive() Checks C and G content. If they fill up 60%, then survival is true.
+* */
 const pAequorFactory = (number, structure) => {
     return {
         specimenNum: number,
@@ -56,7 +63,7 @@ const pAequorFactory = (number, structure) => {
         }
     }
 };
-
+// Basically creates 30 samples for an array that makes sure all strands will survive.
 const sampleFiller = (sample) => {
     let i = 1;
 
@@ -69,7 +76,7 @@ const sampleFiller = (sample) => {
     }
     return sample;
 };
-
+// Test cases
 let strand1 = mockUpStrand();
 let strand2 = mockUpStrand();
 
