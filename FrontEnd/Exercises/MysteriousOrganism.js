@@ -15,7 +15,6 @@ const mockUpStrand = () => {
     }
     return newStrand
 };
-
 //Start here
 //initial list
 let samples = [];
