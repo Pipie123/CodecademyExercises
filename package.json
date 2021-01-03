@@ -1,0 +1,8 @@
+{
+  "name": "Codecademy",
+  "version": "1.0.0",
+  "type": "module",
+  "dependencies": {
+    "react-dom": "latest"
+  }
+}
